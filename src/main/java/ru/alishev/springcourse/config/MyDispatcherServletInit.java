@@ -30,7 +30,7 @@ public class MyDispatcherServletInit extends AbstractAnnotationConfigDispatcherS
 
     private void registerHiddenFieldFilter(ServletContext aContext) {
         aContext.addFilter("hiddenHttpMethodFilter",
-                new HiddenHttpMethodFilter())
+                        new HiddenHttpMethodFilter())
                 .addMappingForUrlPatterns(null, true, "/*");
     }
 }
